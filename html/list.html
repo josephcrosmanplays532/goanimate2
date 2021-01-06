@@ -15,7 +15,6 @@
 						<a href="/cc?themeId=family&bs=bob">Bob</a>
 						<a href="/cc?themeId=family&bs=rocky">Rocky</a>
 						<div></div>
-						<!--
 						<a href="/cc?themeId=business&bs=default">Business</a>
 						<a href="/cc?themeId=business&bs=heavy">Heavy</a>
 						<a href="/cc?themeId=business&bs=kid">Kid</a>
@@ -23,7 +22,6 @@
 						<a href="/cc?themeId=whiteboard&bs=default">Whiteboard</a>
 						<a href="/cc?themeId=whiteboard&bs=kid">Whiteboard (Kid)</a>
 						<div></div>
-						-->
 						<a href="/cc?themeId=anime&bs=guy">Guy (Anime)</a>
 						<a href="/cc?themeId=anime&bs=girl">Girl (Anime)</a>
 						<div></div>
@@ -48,7 +46,7 @@
 						<a href="/cc_browser?themeId=ninja">Chibi Ninjas</a>
 					</menu>
 				</div>
-				<a href="/go_full" class="button_big">MAKE A VIDEO</a>
+				<a href="/html/old.html" class="button_big">MAKE A VIDEO</a>
 			</div>
 		</div>
 		<div class="warning"> Goanimate is currently in public beta testing, please except some downtime, video deletion, and software breaking bugs to occur at any point.<br>
@@ -93,7 +91,7 @@
 				const tbl = json[c];
 				const date = tbl.date.substr(0, 10) + ' ' + tbl.date.substr(11);
 				tbody.insertAdjacentHTML('beforeend',
-					'<tr><td><img src="/movie_thumbs/' + tbl.id + '.png"></td><td><div>' + tbl.title.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;") + '</div><div>' + tbl.durationString + '</div></div></td><td><span>' + date + '</span></td><td><a href="javascript:;" onclick="popup(\'' + tbl.id + '\')"></a><a href="/go_full?movieId=' + tbl.id + '"></a><a href="/movies/' + tbl.id + '.xml" download="' + tbl.title + '"></a></td></tr>');
+					'<tr><td><img src="/movie_thumbs/' + tbl.id + '.png"></td><td><div>' + tbl.title.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;") + '</div><div>' + tbl.durationString + '</div></div></td><td><span>' + date + '</span></td><td><a href="javascript:;" onclick="popup(\'' + tbl.id + '\')"></a><a href="/html/old.html?movieId=' + tbl.id + '"></a><a href="/movies/' + tbl.id + '.xml" download="' + tbl.title + '"></a></td></tr>');
 			}
 		}
 
